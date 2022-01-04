@@ -1,0 +1,162 @@
+.container2 {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+h2, h3 {
+    font-weight: 400;
+}
+
+.about {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.parag1 {
+    width: 80%;
+}
+
+.parag1 h2 {
+    font-size: 3rem;
+}
+
+.entete .parag1::after{
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    content: '';
+	display: block;
+	left: 0;
+	bottom: 0;
+	height: 4px;
+	width: 150px;
+	background: linear-gradient(45deg, #39e27a, #71aadf);
+}
+
+.parag1 p {
+    line-height: 1.4rem;
+}
+
+.images {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image {
+    width: 32%;
+}
+.image img {
+    width: 100%;
+    border-radius: 8px;
+    border: 5px solid;
+    border-color: transparent;
+}
+
+.image h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.image p {
+    line-height: 1.3rem;
+}
+
+
+
+.imagee img {
+    width: 100%;
+    border-radius: 5px;
+    border: 5px solid;
+    border-color: #000000;
+
+}
+
+
+.projet {
+    background: #000a09;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    color: var(--color1);
+}
+
+.projet  h2{
+    color:white; 
+}
+
+.texte p {
+    color: white;
+}
+
+.projet2 {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.deco {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.deco img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+}
+
+
+.contact {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: #000a09;
+    color: white;
+}
+
+/* Tablettes */
+@media all and (max-width: 991px) {
+    .menu{
+        z-index: 1; 
+    }
+    .toggle{
+        z-index: 100;
+      }
+}
+
+/* Mobile */
+@media all and (max-width: 767px) {
+    .menu{
+        z-index: 1; 
+    }
+    .toggle{
+        z-index: 100;
+    }
+
+
+    .parag1{
+        width: 100%;
+    }
+    
+    .images {
+        flex-direction: column;
+    }
+
+    .image{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+
+    .projet2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact{
+        font-size: smaller;
+    }
+}

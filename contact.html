@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="FR">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylecontact.css" />
+    <link rel="stylesheet" href="stylefooter.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stylle.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="logo" width="120px" height="120px"/>
+            </div>
+            <div class="toggle">
+                <i class="fas fa-bars ouvrir"></i>
+                <i class="fas fa-times fermer"></i>
+            </div>
+    
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="livres.html">Livres</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="inscription.html"><button class="btn">Inscription</button></a></li>
+                <li><a href="connexion.html"><button class="btn2">Connexion</button></a></li>
+            </ul>
+        </nav> 
+    </header> <br> <br> <br> 
+
+       <section>
+            <div class="container4">
+                <div class="titre">
+                    <h3>Contactez-nous</h3>
+                </div>
+                <form class="cf" name="contact">
+                    <input type="text" name="nom" id="nom" placeholder="Votre Nom" required>
+                    <input type="text" name="prenom" id="prenom" placeholder="Votre Prénom" required>
+                    <input type="text" name="email" placeholder="Votre email" required>
+                    <input type="text" name="sujet" placeholder="Votre sujet" required> 
+                    <textarea name="msg" placeholder="Entrez votre message" required></textarea>
+                    <button type="submit" onclick="ajouter()">Envoyer</button>
+                </form>
+            </div>
+       </section>
+    <br>
+
+ <main>
+
+    <table id="table_form">
+    
+        <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Email</th>
+            <th>Sujet</th>
+            <th>Message</th>
+        </tr>
+    
+    </table>
+    
+</main>
+<script>
+
+    console.log();
+    
+        var orderForm=document.forms.contact;
+    
+        function bienvenue() {
+            alert("alerte salut");
+        }
+    
+        function ajouter() {
+            var createTr=document.createElement('tr');
+            for(var i=1; i<6; i++)
+        {
+    
+        this["td"+i]=document.createElement('td');
+    
+        }   
+    
+    td1.textContent=orderForm.elements['nom'].value;
+    td2.textContent=orderForm.elements['prenom'].value;
+    td3.textContent=orderForm.elements['email'].value;
+    td4.textContent=orderForm.elements['sujet'].value;
+    td5.textContent=orderForm.elements['msg'].value;
+    
+    for(i=1;i<6;i++){
+        createTr.append(this["td"+i]);
+    }
+    
+    table_form.appendChild(createTr);
+    
+    }
+    </script>
+
+
+    <script src="app copie.js"></script>
+    
+<br>
+    <footer class="footer">
+        <div class="container1">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Notre société</h4>
+                    <ul>
+                        <li><a href="apropos.html">À Propos</a></li>
+                        <li><a href="#">Nos services</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Programme abonnement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Besoin d'aide?</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shopping</a></li>
+                        <li><a href="#">Commandes</a></li>
+                        <li><a href="#">Options de paiement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Achat en ligne</h4>
+                    <ul>
+                        <li><a href="#">Type</a></li>
+                        <li><a href="#">Éducation</a></li>
+                        <li><a href="#">BD</a></li>
+                        <li><a href="#">Manga</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+ 
+
+</body>
+
+</html>

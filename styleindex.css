@@ -1,0 +1,133 @@
+.about {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 0;
+}
+
+.parag1 {
+    width: 80%;
+}
+
+.parag1 h2 {
+    font-size: 3rem;
+}
+
+.entete .parag1::after{
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    content: '';
+	display: block;
+	left: 0;
+	bottom: 0;
+	height: 4px;
+	width: 150px;
+	background: linear-gradient(45deg, #39e27a, #71aadf);
+}
+
+.parag1 p {
+    line-height: 1.4rem;
+}
+
+.images {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.imagee img {
+    width: 100%;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 5px solid;
+    border-color: transparent;
+
+}
+
+.projet4 {
+    background: #000a09;
+    padding-top: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+    color: var(--color1);
+    margin-top: 0;
+    
+
+    
+}
+
+.projet4  h2{
+    color:white; 
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.texte p {
+    color: white;
+}
+
+.projet2 {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.deco {
+    position: relative;
+}
+
+.deco img {
+    width: 100%;
+    height: 100%;
+}
+
+.deco h3 {
+    position: absolute;
+    left: 1rem;
+    bottom: 2rem;
+    font-size: 2rem;
+}
+
+/* Tablettes */
+@media all and (max-width: 991px) {
+    .menu{
+        z-index: 20; 
+    }
+    .toggle{
+        z-index: 100;
+      }
+  
+}
+
+/* Mobile */
+@media all and (max-width: 767px) {
+    .menu{
+        z-index: 1; 
+    }
+    .toggle{
+        z-index: 100;
+    }
+
+
+    .parag1{
+        width: 100%;
+    }
+    
+    .images {
+        flex-direction: column;
+    }
+
+    .image{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+
+    .projet2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}

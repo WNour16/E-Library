@@ -1,0 +1,41 @@
+*{
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slide{
+    height: 60vh;
+    position: relative;   
+}
+.slide img{
+   object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;   /* en haut à gauche donc vont se superposer */
+    left: 0; /* en haut à gauche donc vont se superposer */
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.slide img.active{
+    opacity: 1;
+}
+.suivant, .precedent{
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.suivant{
+    right: 1rem;
+}
+
+.precedent{
+    left: 1rem;
+}
